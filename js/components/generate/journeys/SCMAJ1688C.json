@@ -1,0 +1,47 @@
+{
+  "program": "SCMAJ1688C",
+  "program_desc": "Major (Co-operative) Program in Computer Science",
+  "logp": -10.5182,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPD01H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["MATA37H3", "STAB22H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["CSCA48H3", "MATA22H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["CSCB07H3", "CSCB36H3", "CSCC37H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "courses": ["CSCB09H3", "CSCB58H3", "CSCB63H3"]
+    },
+    {
+      "k": 6,
+      "courses": "WT"
+    },
+    {
+      "k": 7,
+      "courses": "WT"
+    },
+    {
+      "k": 8,
+      "courses": ["STAC51H3", "WT"]
+    },
+    {
+      "k": 9,
+      "courses": ["CSCD58H3", "STAC62H3"]
+    },
+    {
+      "k": 10,
+      "courses": ["CSCC63H3", "CSCD01H3", "STAC63H3", "STAC70H3"]
+    }
+  ]
+}

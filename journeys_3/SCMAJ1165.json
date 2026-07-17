@@ -1,0 +1,37 @@
+{
+  "program": "SCMAJ1165",
+  "program_desc": "Major Program in Mathematics",
+  "logp": -8.0531,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "MATA22H3",
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "MATB24H3",
+        "MATB41H3",
+        "MATB44H3",
+        "STAB52H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "MATB42H3"
+      ]
+    }
+  ]
+}

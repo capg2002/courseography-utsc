@@ -1,0 +1,44 @@
+{
+  "program": "SCMAJ1688",
+  "program_desc": "Major Program in Computer Science",
+  "logp": -5.2862,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "CSCA48H3",
+        "MATA22H3",
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "CSCB07H3",
+        "CSCB36H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "CSCB09H3",
+        "CSCB58H3",
+        "CSCB63H3"
+      ]
+    },
+    {
+      "k": 5,
+      "courses": [
+        "CSCC37H3"
+      ]
+    }
+  ]
+}

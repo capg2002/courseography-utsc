@@ -1,0 +1,64 @@
+{
+  "program": "SCSPE0510",
+  "program_desc": "Specialist Program in Computer Science - Comprehensive Stream",
+  "logp": -4.5218,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "CSCA48H3",
+        "MATA22H3",
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "CSCB07H3",
+        "CSCB36H3",
+        "MATB24H3",
+        "MATB41H3",
+        "STAB52H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "CSCB09H3",
+        "CSCB58H3",
+        "CSCB63H3"
+      ]
+    },
+    {
+      "k": 5,
+      "courses": [
+        "CSCC37H3",
+        "CSCC43H3",
+        "CSCC73H3"
+      ]
+    },
+    {
+      "k": 6,
+      "courses": [
+        "CSCC24H3",
+        "CSCC63H3",
+        "CSCC69H3",
+        "CSCD37H3"
+      ]
+    },
+    {
+      "k": 7,
+      "courses": [
+        "CSCD03H3"
+      ]
+    }
+  ]
+}

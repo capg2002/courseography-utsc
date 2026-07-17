@@ -1,0 +1,282 @@
+cabal-version:       3.0
+name:                courseography
+version:             0.7.1.0
+synopsis:            Program and course planning app for the University of Toronto.
+description:         A web application designed to aid students in planning their courses
+                     at the University of Toronto.
+homepage:            https://courseography.teach.cs.toronto.edu
+license:             GPL-3.0-or-later
+license-file:        LICENSE
+author:              David Liu
+maintainer:          david@cs.toronto.edu
+-- copyright:
+category:            Planning
+build-type:          Custom
+
+custom-setup
+  setup-depends:
+    base >= 4.14,
+    Cabal >= 3.0,
+    process >= 1.2,
+    directory
+
+library
+  exposed-modules:
+    Config,
+    Controllers.Course,
+    Controllers.Generate,
+    Controllers.Graph,
+    Controllers.Program,
+    Css.Constants,
+    Database.CourseVideoSeed,
+    Database.Database,
+    Database.DataType,
+    Database.Requirement,
+    Database.Tables,
+    Database.Migrations,
+    DynamicGraphs.CourseFinder,
+    DynamicGraphs.GraphGenerator,
+    DynamicGraphs.GraphNodeUtils,
+    DynamicGraphs.GraphOptions,
+    DynamicGraphs.WriteRunDot,
+    Export.GetImages,
+    Export.ImageConversion,
+    Export.TimetableImageCreator,
+    MasterTemplate,
+    Models.Course,
+    Models.Graph,
+    Models.Meeting,
+    Models.Program,
+    Scripts,
+    Svg.Builder,
+    Svg.Database,
+    Svg.Generator,
+    Svg.Parser,
+    Util.Blaze,
+    Util.Happstack,
+    Util.Helpers,
+    WebParsing.ArtSciParser,
+    WebParsing.ParsecCombinators,
+    WebParsing.PostParser,
+    WebParsing.ReqParser,
+  build-depends:
+    aeson,
+    base >=4.14,
+    base64-bytestring,
+    blaze-html,
+    blaze-markup,
+    blaze-svg,
+    bytestring,
+    Cabal >= 1.16.0,
+    containers,
+    crypton-connection,
+    data-default-class,
+    directory,
+    diagrams-lib,
+    diagrams-svg,
+    filepath,
+    graphviz,
+    happstack-server,
+    hlint,
+    hslogger,
+    http-conduit,
+    http-types,
+    MissingH,
+    markdown,
+    monad-logger,
+    mtl,
+    parsec,
+    persistent,
+    persistent-sqlite,
+    process,
+    random,
+    resourcet,
+    split,
+    system-filepath,
+    tagsoup,
+    text,
+    time,
+    tls,
+    transformers,
+    unordered-containers,
+    yaml
+  default-extensions:
+    LambdaCase,
+    OverloadedStrings,
+    ScopedTypeVariables
+  default-language: Haskell2010
+  ghc-options: -Wall -fwarn-tabs
+  hs-source-dirs: app
+
+
+test-suite Tests
+  main-is: Main.hs
+  other-modules:
+    Controllers.CourseControllerTests,
+    Controllers.GenerateControllerTests,
+    Controllers.GraphControllerTests,
+    Controllers.ProgramControllerTests,
+    Database.CourseQueriesTests,
+    RequirementTests.ModifierTests,
+    RequirementTests.PostParserTests,
+    RequirementTests.PreProcessingTests,
+    RequirementTests.ReqParserTests,
+    SvgTests.IntersectionTests,
+    TestHelpers
+  Type: exitcode-stdio-1.0
+  build-depends:
+    aeson,
+    base >=4.14,
+    bytestring,
+    Cabal >= 1.16.0,
+    containers,
+    courseography,
+    directory,
+    happstack-server,
+    parsec,
+    persistent-sqlite,
+    QuickCheck,
+    split,
+    tagsoup,
+    tasty >=1.5.3,
+    tasty-discover,
+    tasty-hunit,
+    test-framework,
+    test-framework-hunit,
+    test-framework-quickcheck2,
+    text,
+    time
+  build-tool-depends:
+    tasty-discover:tasty-discover
+  default-extensions:
+    LambdaCase,
+    OverloadedStrings,
+    ScopedTypeVariables
+  default-language: Haskell2010
+  ghc-options: -Wall -fwarn-tabs
+  hs-source-dirs: backend-test
+
+executable courseography
+  main-is:             Main.hs
+  other-modules:
+    Config,
+    Controllers.Course,
+    Controllers.Graph,
+    Controllers.Generate,
+    Controllers.Timetable,
+    Controllers.Program,
+    Css.Constants,
+    Database.CourseVideoSeed,
+    Database.Database,
+    Database.DataType,
+    Database.Requirement,
+    Database.Tables,
+    Database.Migrations,
+    DynamicGraphs.CourseFinder,
+    DynamicGraphs.GraphGenerator,
+    DynamicGraphs.GraphNodeUtils,
+    DynamicGraphs.GraphOptions,
+    DynamicGraphs.WriteRunDot,
+    Export.GetImages,
+    Export.ImageConversion,
+    Export.LatexGenerator,
+    Export.PdfGenerator,
+    Export.TimetableImageCreator,
+    MasterTemplate,
+    Models.Course,
+    Models.Graph,
+    Models.Meeting,
+    Models.Program,
+    Response,
+    Response.About,
+    Response.Draw,
+    Response.Loading,
+    Response.NotFound,
+    Routes,
+    Scripts,
+    Server,
+    Svg.Builder,
+    Svg.Database,
+    Svg.Generator,
+    Svg.Parser,
+    Util.Blaze,
+    Util.Documentation,
+    Util.Happstack,
+    Util.Helpers,
+    WebParsing.ArtSciParser,
+    WebParsing.Ligature,
+    WebParsing.ParsecCombinators,
+    WebParsing.PostParser,
+    WebParsing.ReqParser,
+    WebParsing.UtsgJsonParser
+  -- These are compiler extensions used for every module
+  default-extensions:
+    LambdaCase,
+    OverloadedStrings,
+    ScopedTypeVariables
+  other-extensions:
+    DeriveGeneric,
+    EmptyDataDecls,
+    FlexibleContexts,
+    FlexibleInstances,
+    GADTs,
+    GeneralizedNewtypeDeriving,
+    MultiParamTypeClasses,
+    QuasiQuotes,
+    TemplateHaskell,
+    TypeFamilies
+  build-depends:
+    aeson,
+    base >= 4.9,
+    base64-bytestring,
+    blaze-html,
+    blaze-markup,
+    blaze-svg,
+    bytestring,
+    conduit,
+    containers,
+    crypton-connection,
+    data-default-class,
+    diagrams-lib >= 1.3,
+    diagrams-svg >= 1.3.1,
+    directory,
+    fgl,
+    filepath,
+    graphviz,
+    happstack-server,
+    HaTeX,
+    hlint,
+    hslogger,
+    HTTP,
+    http-client,
+    http-conduit,
+    http-types,
+    lucid,
+    markdown,
+    MissingH,
+    monad-logger,
+    mtl,
+    network,
+    old-locale,
+    parsec,
+    persistent >= 2.1.2,
+    persistent-sqlite,
+    persistent-template,
+    process >= 1.2,
+    random,
+    regex-posix,
+    resourcet,
+    split,
+    stylish-haskell,
+    system-filepath,
+    tagsoup,
+    text,
+    time,
+    tls,
+    transformers,
+    unordered-containers,
+    vector,
+    yaml
+  default-language: Haskell2010
+  ghc-options: -Wall -fwarn-tabs
+  hs-source-dirs: app

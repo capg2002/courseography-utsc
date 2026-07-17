@@ -1,0 +1,56 @@
+{
+  "program": "SCSPE0805",
+  "program_desc": null,
+  "logp": "NA",
+  "semesters": [
+    {
+      "k": 1,
+      "year": 1,
+      "term": "Fall",
+      "n_courses": 5,
+      "courses": ["CSCA67H3", "CSCA08H3", "MATA31H3", "CSCD03H3", "CSCD54H3"]
+    },
+    {
+      "k": 2,
+      "year": 1,
+      "term": "Winter",
+      "n_courses": 3,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "year": 1,
+      "term": "Summer",
+      "n_courses": 5,
+      "courses": ["CSCB09H3", "CSCB07H3", "CSCB36H3", "CSCB58H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "year": 2,
+      "term": "Fall",
+      "n_courses": 4,
+      "courses": ["CSCC01H3", "CSCC37H3", "CSCD90H3", "MATB24H3"]
+    },
+    {
+      "k": 5,
+      "year": 2,
+      "term": "Winter",
+      "n_courses": 3,
+      "courses": ["CSCB63H3", "CSCC69H3", "CSCD01H3"]
+    },
+    {
+      "k": 6,
+      "year": 2,
+      "term": "Summer",
+      "n_courses": 2,
+      "courses": ["CSCC43H3", "CSCC63H3"]
+    },
+    {
+      "k": 7,
+      "year": 3,
+      "term": "Fall",
+      "n_courses": 1,
+      "courses": ["CSCC73H3"]
+    }
+  ]
+}

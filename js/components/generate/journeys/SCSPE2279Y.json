@@ -1,0 +1,47 @@
+{
+  "program": "SCSPE2279Y",
+  "program_desc": "Specialist (Co-operative) program in Statistics, Statistical Science Stream",
+  "logp": -3.2189,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPB50H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["STAB40H3", "MATB41H3", "MATB44H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["MATB24H3", "MATB61H3", "STAB41H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "courses": "WT"
+    },
+    {
+      "k": 6,
+      "courses": ["CSCC37H3", "STAC50H3", "STAC51H3", "STAC62H3", "STAC67H3"]
+    },
+    {
+      "k": 7,
+      "courses": "WT"
+    },
+    {
+      "k": 8,
+      "courses": ["MATB42H3", "WT"]
+    },
+    {
+      "k": 9,
+      "courses": ["CSCC11H3", "STAD37H3", "STAD57H3"]
+    },
+    {
+      "k": 10,
+      "courses": ["MATC34H3", "MATC44H3", "STAA57H3", "STAC33H3", "STAC58H3", "STAC63H3"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "program": "SCMIN1688",
+  "program_desc": "Minor Program in Computer Science",
+  "logp": -4.1336,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA23H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["CSCB07H3", "CSCB36H3", "MATB24H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["CSCB09H3", "CSCB63H3"]
+    },
+    {
+      "k": 5,
+      "courses": ["CSCC01H3", "CSCC43H3"]
+    }
+  ]
+}

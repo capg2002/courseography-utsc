@@ -1,0 +1,33 @@
+[
+  { "program": "SCMAJ1688C", "program_desc": "MAJOR (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE (SCIENCE)", "category": "major" },
+  { "program": "SCMAJ1688",  "program_desc": "MAJOR PROGRAM IN COMPUTER SCIENCE (SCIENCE)", "category": "major" },
+  { "program": "SCMIN1688",  "program_desc": "MINOR PROGRAM IN COMPUTER SCIENCE (SCIENCE)", "category": "minor" },
+  { "program": "SCSPE0510C", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE - Comprehensive Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0805C", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE - Entrepreneurship Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0455C", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE - Information Systems Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0795C", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN COMPUTER SCIENCE - Software Engineering Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0510",  "program_desc": "SPECIALIST PROGRAM IN COMPUTER SCIENCE - Comprehensive Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0805",  "program_desc": "SPECIALIST PROGRAM IN COMPUTER SCIENCE - Entrepreneurship Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0455",  "program_desc": "SPECIALIST PROGRAM IN COMPUTER SCIENCE - Information Systems Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE0795",  "program_desc": "SPECIALIST PROGRAM IN COMPUTER SCIENCE - Software Engineering Stream (SCIENCE)", "category": "specialist" },
+
+  { "program": "SCMAJ2289C", "program_desc": "MAJOR (CO-OPERATIVE) PROGRAM IN STATISTICS (SCIENCE)", "category": "major" },
+  { "program": "SCMAJ2289",  "program_desc": "MAJOR PROGRAM IN STATISTICS (SCIENCE)", "category": "major" },
+  { "program": "SCMIN2295",  "program_desc": "MINOR PROGRAM IN APPLIED STATISTICS (SCIENCE)", "category": "minor" },
+  { "program": "SCMIN2289",  "program_desc": "MINOR PROGRAM IN STATISTICS (SCIENCE)", "category": "minor" },
+  { "program": "SCSPE2299T", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN STATISTICS - Quantitative Finance Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE2289Y", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN STATISTICS - Statistical Machine Learning and Data Science Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE2279Y", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN STATISTICS - Statistical Science Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE2289F", "program_desc": "SPECIALIST PROGRAM IN STATISTICS - Quantitative Finance Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE2289Z", "program_desc": "SPECIALIST PROGRAM IN STATISTICS - Statistical Machine Learning and Data Science Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE2279F", "program_desc": "SPECIALIST PROGRAM IN STATISTICS - Statistical Science Stream (SCIENCE)", "category": "specialist" },
+
+  { "program": "SCMAJ1165C", "program_desc": "MAJOR (CO-OPERATIVE) PROGRAM IN MATHEMATICS (SCIENCE)", "category": "major" },
+  { "program": "SCMAJ1165",  "program_desc": "MAJOR PROGRAM IN MATHEMATICS (SCIENCE)", "category": "major" },
+  { "program": "SCSPE1165U", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN MATHEMATICS - Comprehensive Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE1165M", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN MATHEMATICS - Statistics Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE1166T", "program_desc": "SPECIALIST (CO-OPERATIVE) PROGRAM IN MATHEMATICS - Teaching Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE11659", "program_desc": "SPECIALIST PROGRAM IN MATHEMATICS - Comprehensive Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE11655", "program_desc": "SPECIALIST PROGRAM IN MATHEMATICS - Statistics Stream (SCIENCE)", "category": "specialist" },
+  { "program": "SCSPE11653", "program_desc": "SPECIALIST PROGRAM IN MATHEMATICS - Teaching Stream (SCIENCE)", "category": "specialist" }
+]

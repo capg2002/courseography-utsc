@@ -1,0 +1,43 @@
+{
+  "program": "SCMAJ2289C",
+  "program_desc": "Major (Co-operative) Program in Statistics",
+  "logp": -10.0545,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPB50H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["CSCB07H3", "MATB24H3", "MATB41H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["MATB42H3", "MATB61H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "courses": "WT"
+    },
+    {
+      "k": 6,
+      "courses": "WT"
+    },
+    {
+      "k": 7,
+      "courses": "WT"
+    },
+    {
+      "k": 8,
+      "courses": ["STAC51H3", "STAC62H3", "STAC67H3"]
+    },
+    {
+      "k": 9,
+      "courses": ["STAC33H3", "STAC58H3"]
+    }
+  ]
+}

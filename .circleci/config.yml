@@ -1,0 +1,94 @@
+version: 2.1
+
+orbs:
+  coveralls: coveralls/coveralls@2.2.5
+
+workflows:
+  tests:
+    jobs:
+      - build:
+          context: coveralls-context
+
+jobs:
+  build:
+    docker:
+      - image: fpco/stack-build:lts-23
+    steps:
+      - checkout
+      - run: git remote add upstream https://github.com/Courseography/courseography.git
+      - run: git fetch upstream
+
+      - restore_cache:
+          name: Restore Cached Dependencies (Haskell)
+          keys:
+            - v1.4-courseography-haskell-{{ checksum "courseography.cabal" }}-{{ checksum "stack.yaml.lock" }}
+            - v1.4-courseography-haskell-{{ checksum "courseography.cabal" }}
+            - v1.4-courseography-haskell-{{ checksum "stack.yaml.lock" }}
+            - v1.4-courseography-haskell-
+
+      - run:
+          name: Install Package Dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y graphviz
+            sudo apt-get install -y texlive-latex-base
+            sudo wget http://imagemagick.org/archive/binaries/magick
+            sudo cp magick /usr/local/bin
+            sudo chmod 777 /usr/local/bin/magick
+            sudo dpkg --remove --force-remove-reinstreq nodejs
+            stack update
+
+            curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - &&\
+            sudo dpkg --remove --force-remove-reinstreq libnode72:amd64
+            sudo apt-get install -y nodejs
+
+            corepack enable
+            corepack prepare yarn@stable --activate
+
+      - run:
+          name: Resolve/Update Dependencies
+          command: |
+            stack --no-terminal setup
+            rm -fr $(stack path --dist-dir) $(stack path --local-install-root)
+            stack --no-terminal build --fast -j4 --ghc-options -Werror
+            stack build hlint
+            stack build hpc-lcov
+            yarn install
+
+      - run:
+          name: Run Frontend Tests and Generate Coverage
+          command: |
+            yarn test --coverage --maxWorkers=4
+            mv coverage/lcov.info coverage/frontend.info
+
+      - run:
+          name: Run Backend Tests and Generate Coverage
+          command: |
+            stack --no-terminal test --coverage
+            $(stack exec which hpc-lcov) -o coverage/backend.info
+
+      - coveralls/upload:
+          coverage_files: coverage/frontend.info coverage/backend.info
+
+      - save_cache:
+          name: Cache Dependencies (Haskell)
+          key: v1.4-courseography-haskell-{{ checksum "courseography.cabal" }}-{{ checksum "stack.yaml.lock" }}
+          paths:
+            - "/root/.stack"
+            - ".stack-work"
+
+      - run:
+          name: Run lint-staged checks
+          command: |
+            npx lint-staged --diff="upstream/master...$(git branch --show-current)"
+
+      - run:
+          name: Generate documentation
+          command: |
+            stack exec haddock -- -o doc -h --optghc=-iapp --optghc=-XOverloadedStrings --optghc=-XPartialTypeSignatures --optghc=-XScopedTypeVariables --optghc=-XLambdaCase --ignore-all-exports app/Main.hs
+
+      - store_artifacts:
+          path: doc
+          destination: docs
+    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/reference/configuration-reference/#resourceclass
+    resource_class: large

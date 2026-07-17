@@ -1,0 +1,47 @@
+{
+  "program": "SCSPE2299T",
+  "program_desc": "Specialist (Co-operative) Program in Statistics- Quantitative Finance Stream",
+  "logp": -7.5443,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPD01H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["COPB50H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["STAB40H3", "MATB41H3", "MATB44H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "courses": ["MATB24H3", "MATB42H3", "MATB61H3", "MATC46H3", "STAB41H3"]
+    },
+    {
+      "k": 6,
+      "courses": "STAC67H3"
+    },
+    {
+      "k": 7,
+      "courses": ["CSCC37H3", "STAC62H3", "STAD37H3", "WT"]
+    },
+    {
+      "k": 8,
+      "courses": ["MATC46H3", "STAC70H3", "WT"]
+    },
+    {
+      "k": 9,
+      "courses": ["STAD57H3", "WT"]
+    },
+    {
+      "k": 10,
+      "courses": ["STAC58H3", "STAC63H3", "STAC70H3", "STAD70H3"]
+    }
+  ]
+}

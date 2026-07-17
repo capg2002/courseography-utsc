@@ -1,0 +1,84 @@
+module Controllers.Generate
+    (generateResponse, findAndSavePrereqsResponse, findAndSaveJourneyResponse) where
+
+import Control.Monad ()
+import Control.Monad.IO.Class (liftIO)
+import Data.Aeson (decode, object, (.=))
+import Data.List (nub)
+import Data.Maybe (fromJust, isNothing, mapMaybe)
+import qualified Data.Text.Lazy as TL
+import DynamicGraphs.GraphOptions (CourseGraphOptions (..), GraphOptions (..))
+import DynamicGraphs.WriteRunDot (generateAndSavePrereqResponse, getBody)
+import Happstack.Server
+import MasterTemplate
+import Models.Program (reqsForProgram, returnProgram)
+import Scripts
+import Text.Blaze ((!))
+import qualified Text.Blaze.Html5 as H
+import qualified Text.Blaze.Html5.Attributes as A
+import Util.Happstack (createJSONResponse)
+import Data.Aeson (decode, eitherDecode, object, (.=))
+import qualified Data.ByteString.Lazy as L
+import DynamicGraphs.WriteRunDot (generateAndSavePrereqResponse, generateAndSaveJourneyResponse, getBody)
+
+generateResponse :: ServerPart Response
+generateResponse =
+    ok $ toResponse $
+        masterTemplate "Courseography - Generate"
+                    []
+                    (do
+                        H.div ! A.id "navbar" $ ""
+                        generatePrerequisites
+                    )
+                    generateScripts
+
+generatePrerequisites :: H.Html
+generatePrerequisites =
+    H.html $ do
+        H.head $
+            H.title "Generate Prerequisites!"
+        H.div ! A.id "generateRoot" $ ""
+
+findAndSavePrereqsResponse :: ServerPart Response
+findAndSavePrereqsResponse = do
+    method PUT
+    requestBody <- getBody
+    let coursesOptions :: CourseGraphOptions = fromJust $ decode requestBody
+
+    programResults <- liftIO $ mapM (\code -> do
+                        program <- returnProgram (TL.toStrict code)
+                        return (TL.toStrict code, program))
+                   (programs coursesOptions)
+
+    let invalidPrograms = map fst $ filter (isNothing . snd) programResults
+        validPrograms = mapMaybe snd programResults
+
+    allCourses <- liftIO $ nub <$>
+        if all (== TL.empty) (courses coursesOptions)
+            then return $ map TL.pack (concatMap reqsForProgram validPrograms)
+            else return $ courses coursesOptions
+
+    let updatedCoursesOptions = coursesOptions
+            { courses = map TL.toUpper allCourses
+            , graphOptions = (graphOptions coursesOptions)
+                { taken = map TL.toUpper (taken (graphOptions coursesOptions))
+                , departments = map TL.toUpper (departments (graphOptions coursesOptions))
+                }
+            }
+
+    if all (== TL.empty) (courses coursesOptions) && not (null invalidPrograms)
+        then return $ createJSONResponse $ object ["error" .= object ["invalidPrograms" .= invalidPrograms]]
+        else liftIO $ generateAndSavePrereqResponse updatedCoursesOptions
+
+findAndSaveJourneyResponse :: ServerPart Response
+findAndSaveJourneyResponse = do
+    method PUT
+    requestBody <- getBody
+
+    -- Expected request body: { "program": "SCSPE0795", "kind": "optimal" }
+    case eitherDecode requestBody of
+        Left err ->
+            return $ createJSONResponse $ object
+                ["error" .= object ["message" .= ("Invalid JSON: " <> err)]]
+        Right journeyReq ->
+            liftIO $ generateAndSaveJourneyResponse journeyReq

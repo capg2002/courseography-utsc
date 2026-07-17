@@ -1,0 +1,74 @@
+# cabal sandbox
+.cabal-sandbox/
+cabal.sandbox.config
+
+# local database
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# generated build files
+/app/dist/
+
+# generated stack files
+.stack-work/
+
+# generated CSS
+/public/style/
+
+# generated resources
+/graphs/gen/*.svg
+/graphs/gen/*.png
+
+# course videos
+/public/videos/
+
+# generated documentation
+/doc
+
+# IDE project files
+.idea
+.vscode
+
+# Node (Javascript) modules
+/node_modules
+
+# Yarn files
+.yarn/*
+.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# TODO: eventually remove all public/js files from tracking
+/public/js/search
+/public/js/grid/app.js
+/public/js/post/app.js
+/public/js/generate/app.js
+/public/js/graph/app.js
+/public/js/draw/app.js
+/public/js/about/app.js
+/public/*.svg
+/public/*.png
+/public/*.ttf
+/public/*.eot
+/public/*.woff
+/public/*.png
+/public/*.woff2
+
+# coverage directory used by tools like istanbul and jest --coverage
+coverage
+
+# cypress suggested folder structure scaffolding
+/cypress/fixtures
+/cypress/integration/examples
+/cypress/plugins
+/cypress/support
+
+# Python virtual environment
+venv
+
+# Other generated files
+.eslintcache

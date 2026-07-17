@@ -1,0 +1,15 @@
+flags:
+  sendfile:
+    portable: true
+  regex-posix:
+    _regex-posix-clib: true
+extra-package-dbs: []
+packages:
+  - .
+allow-newer: true
+compiler-check: newer-minor
+resolver: lts-23.18
+dump-logs: all
+require-stack-version: ! ">= 1.6"
+ghc-options:
+  "$locals": -Wall -fwarn-tabs -Wno-incomplete-uni-patterns

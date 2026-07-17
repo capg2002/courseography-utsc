@@ -1,0 +1,19 @@
+{
+  "program": "SCMIN1688",
+  "program_desc": "Minor Program in Computer Science",
+  "logp": -4.1336,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "CSCA48H3"
+      ]
+    }
+  ]
+}

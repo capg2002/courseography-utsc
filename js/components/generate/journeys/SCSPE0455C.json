@@ -1,0 +1,51 @@
+{
+  "program": "SCSPE0455C",
+  "program_desc": "Specialist (Co-operative) Program in Computer Science - Information Systems Stream",
+  "logp": -11.8827,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPD01H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["CSCB09H3", "CSCB36H3", "MATB24H3", "MATB41H3"]
+    },
+    {
+      "k": 4,
+      "courses": "WT"
+    },
+    {
+      "k": 5,
+      "courses": ["CSCB07H3", "CSCB58H3", "CSCB63H3", "STAB52H3"]
+    },
+    {
+      "k": 6,
+      "courses": ["CSCC01H3", "CSCC10H3", "CSCC37H3", "CSCC43H3", "CSCC73H3"]
+    },
+    {
+      "k": 7,
+      "courses": "WT"
+    },
+    {
+      "k": 8,
+      "courses": "WT"
+    },
+    {
+      "k": 9,
+      "courses": ["CSCC09H3", "CSCC63H3", "CSCC69H3", "CSCD01H3", "CSCD03H3"]
+    },
+    {
+      "k": 10,
+      "courses": "CSCD27H3"
+    },
+    {
+      "k": 11,
+      "courses": "CSCD43H3"
+    }
+  ]
+}

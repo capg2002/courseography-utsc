@@ -1,0 +1,56 @@
+{
+  "program": "SCSPE11659",
+  "program_desc": null,
+  "logp": "NA",
+  "semesters": [
+    {
+      "k": 1,
+      "year": 1,
+      "term": "Fall",
+      "n_courses": 3,
+      "courses": ["CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "year": 1,
+      "term": "Winter",
+      "n_courses": 2,
+      "courses": ["MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "year": 1,
+      "term": "Summer",
+      "n_courses": 3,
+      "courses": ["MATB24H3", "MATB41H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "year": 2,
+      "term": "Fall",
+      "n_courses": 4,
+      "courses": ["MATB43H3", "MATB44H3", "MATC01H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "year": 2,
+      "term": "Winter",
+      "n_courses": 4,
+      "courses": ["MATB42H3", "MATC37H3", "MATC46H3", "MATD01H3"]
+    },
+    {
+      "k": 6,
+      "year": 2,
+      "term": "Summer",
+      "n_courses": 0,
+      "courses": []
+    },
+    {
+      "k": 7,
+      "year": 3,
+      "term": "Fall",
+      "n_courses": 1,
+      "courses": ["MATC34H3"]
+    }
+  ]
+}

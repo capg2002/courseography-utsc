@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`BoolGroup BoolGroup should match shallow snapshot 1`] = `
+<g
+  id="bools"
+/>
+`;
+
+exports[`EdgeGroup should match shallow snapshot 1`] = `
+<g
+  id="edges"
+/>
+`;
+
+exports[`Graph rendering RegionGroup should match shallow snapshot 1`] = `
+<g
+  id="regions"
+>
+  <path
+    className="region"
+    d="M17.386348,281.07376883 17.386348,14.41568908 316.385978,14.41576883 316.386348,281.07376883 "
+    style={
+      {
+        "fill": "#6276b9",
+      }
+    }
+  />
+  <text
+    className="region-label"
+    style={
+      {
+        "fill": "#000000",
+      }
+    }
+    transform=""
+    x={1088.1677413999998}
+    y={201.36453113000002}
+  >
+    Systems
+  </text>
+</g>
+`;
+
+exports[`NodeGroup should match shallow snapshot 1`] = `
+<g
+  id="nodes"
+/>
+`;

@@ -1,0 +1,21 @@
+{
+  "program": "SCMIN1688",
+  "program_desc": null,
+  "logp": "NA",
+  "semesters": [
+    {
+      "k": 1,
+      "year": 1,
+      "term": "Fall",
+      "n_courses": 1,
+      "courses": ["CSCA08H3"]
+    },
+    {
+      "k": 2,
+      "year": 1,
+      "term": "Winter",
+      "n_courses": 1,
+      "courses": ["CSCA48H3"]
+    }
+  ]
+}

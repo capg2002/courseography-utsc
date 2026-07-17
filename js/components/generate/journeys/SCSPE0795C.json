@@ -1,0 +1,47 @@
+{
+  "program": "SCSPE0795C",
+  "program_desc": "Specialist (Co-operative) Program in Computer Science - Software Engineering Stream",
+  "logp": -21.9935,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPD01H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["CSCB07H3", "CSCB36H3", "MATB24H3", "MATB41H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["CSCB09H3", "CSCB58H3", "CSCB63H3", "CSCC10H3", "CSCC11H3"]
+    },
+    {
+      "k": 5,
+      "courses": ["CSCC01H3", "CSCC43H3", "CSCC73H3"]
+    },
+    {
+      "k": 6,
+      "courses": ["CSCC24H3", "CSCC63H3", "WT"]
+    },
+    {
+      "k": 7,
+      "courses": ["CSCC69H3", "WT"]
+    },
+    {
+      "k": 8,
+      "courses": ["CSCD01H3", "CSCD03H3"]
+    },
+    {
+      "k": 9,
+      "courses": "WT"
+    },
+    {
+      "k": 10,
+      "courses": ["CSCC37H3", "CSCD58H3"]
+    }
+  ]
+}

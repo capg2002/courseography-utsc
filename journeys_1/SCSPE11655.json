@@ -1,0 +1,69 @@
+{
+  "program": "SCSPE11655",
+  "program_desc": "Specialist Program in Mathematics - Statistics Stream",
+  "logp": -4.9781,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "MATA22H3",
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "MATB24H3",
+        "STAB52H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "MATB41H3",
+        "MATB44H3",
+        "MATC01H3",
+        "STAB57H3"
+      ]
+    },
+    {
+      "k": 5,
+      "courses": [
+        "MATB42H3",
+        "MATB61H3",
+        "MATC46H3",
+        "STAB57H3"
+      ]
+    },
+    {
+      "k": 6,
+      "courses": [
+        "MATC34H3",
+        "STAC62H3"
+      ]
+    },
+    {
+      "k": 7,
+      "courses": [
+        "MATB43H3",
+        "MATD01H3",
+        "STAC58H3",
+        "STAC67H3"
+      ]
+    },
+    {
+      "k": 8,
+      "courses": [
+        "MATD01H3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "program": "SCMIN2295",
+  "program_desc": "Minor Program in Applied Statistics",
+  "logp": -3.5082,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA20H3",
+        "STAC32H3",
+        "STAC53H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "STAD29H3"
+      ]
+    }
+  ]
+}

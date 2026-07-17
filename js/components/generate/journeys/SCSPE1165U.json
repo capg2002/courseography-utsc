@@ -1,0 +1,51 @@
+{
+  "program": "SCSPE1165U",
+  "program_desc": "Specialist (Co-operative) Program in Mathematics - Comprehensive Stream",
+  "logp": -6.5917,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": ["COPB50H3", "CSCA08H3", "CSCA67H3", "MATA31H3"]
+    },
+    {
+      "k": 2,
+      "courses": ["CSCA48H3", "MATA22H3", "MATA37H3"]
+    },
+    {
+      "k": 3,
+      "courses": ["MATB24H3", "MATB41H3", "STAB52H3"]
+    },
+    {
+      "k": 4,
+      "courses": ["MATB43H3", "MATB44H3", "MATC01H3", "MATC15H3", "STAB57H3"]
+    },
+    {
+      "k": 5,
+      "courses": ["CSCB20H3", "MATB42H3", "MATC44H3", "MATC46H3", "STAC67H3"]
+    },
+    {
+      "k": 6,
+      "courses": "WT"
+    },
+    {
+      "k": 7,
+      "courses": ["MATC34H3", "MATC63H3", "STAC51H3"]
+    },
+    {
+      "k": 8,
+      "courses": "WT"
+    },
+    {
+      "k": 9,
+      "courses": "WT"
+    },
+    {
+      "k": 10,
+      "courses": ["MATC09H3", "MATC27H3", "MATD02H3", "MATD67H3", "STAD37H3"]
+    },
+    {
+      "k": 11,
+      "courses": ["MATC37H3", "MATD94H3"]
+    }
+  ]
+}

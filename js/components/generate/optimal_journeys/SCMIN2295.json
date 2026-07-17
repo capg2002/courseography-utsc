@@ -1,0 +1,42 @@
+{
+  "program": "SCMIN2295",
+  "program_desc": null,
+  "logp": "NA",
+  "semesters": [
+    {
+      "k": 1,
+      "year": 1,
+      "term": "Fall",
+      "n_courses": 5,
+      "courses": ["CSCA08H3", "CSCA20H3", "CSCA67H3", "STAB22H3", "STAB23H3"]
+    },
+    {
+      "k": 2,
+      "year": 1,
+      "term": "Winter",
+      "n_courses": 1,
+      "courses": ["STAB27H3"]
+    },
+    {
+      "k": 3,
+      "year": 1,
+      "term": "Summer",
+      "n_courses": 0,
+      "courses": []
+    },
+    {
+      "k": 4,
+      "year": 2,
+      "term": "Fall",
+      "n_courses": 2,
+      "courses": ["STAC32H3", "STAC53H3"]
+    },
+    {
+      "k": 5,
+      "year": 2,
+      "term": "Winter",
+      "n_courses": 1,
+      "courses": ["STAD29H3"]
+    }
+  ]
+}

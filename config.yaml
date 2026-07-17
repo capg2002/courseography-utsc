@@ -1,0 +1,45 @@
+# Server Configuration Settings
+port: 8000
+#basePath: "/webapps/courseography"
+logMessage: "Happstack.Server.AccessLog.Combined"
+logFile: "" # The file path to log server access to, e.g. "path/to/courseography.log"
+
+# Database Path
+databasePath: "db/database.sqlite3"
+
+# File Path Strings
+graphPath: "./graphs/"
+genCssPath: "./public/style/"
+
+# URLs
+timetableUrl: "https://ttb.utoronto.ca/"
+timetableApiUrl: "https://api.easi.utoronto.ca/ttb/getPageableCourses"
+fasCalendarUrl: "https://artsci.calendar.utoronto.ca/"
+fasCalendarSCUrl: "https://utsc.calendar.utoronto.ca/"
+programsUrl: "https://artsci.calendar.utoronto.ca/listing-program-subject-areas"
+programsSCUrl: "https://utsc.calendar.utoronto.ca/program-sections"
+
+# Term dates
+fallStartDate: 2025-09-08
+fallEndDate: 2025-12-08
+winterStartDate: 2027-01-11
+winterEndDate: 2027-04-12
+summerFStartDate: 2026-05-04
+summerFEndDate: 2026-08-06
+summerSStartDate: 2026-05-04
+summerSEndDate: 2026-08-06
+outDay: 2028-01-01
+
+# Holidays
+holidaysList:
+  - 20251013T
+  - 20251027T
+  - 20251028T
+  - 20251029T
+  - 20251030T
+  - 20251130T
+  - 20260216T
+  - 20260217T
+  - 20260218T
+  - 20260219T
+  - 20260220T

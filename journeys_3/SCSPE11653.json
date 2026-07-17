@@ -1,0 +1,55 @@
+{
+  "program": "SCSPE11653",
+  "program_desc": "Specialist Program in Mathematics - Teaching Stream",
+  "logp": -4.0943,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "MATB24H3",
+        "MATB41H3",
+        "MATB44H3",
+        "STAB52H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "MATB42H3"
+      ]
+    },
+    {
+      "k": 5,
+      "courses": [
+        "MATC01H3",
+        "MATC34H3"
+      ]
+    },
+    {
+      "k": 6,
+      "courses": [
+        "MATB43H3"
+      ]
+    },
+    {
+      "k": 7,
+      "courses": [
+        "STAB57H3"
+      ]
+    }
+  ]
+}

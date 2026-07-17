@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`InfoBox should match snapshot 1`] = `
+<g
+  class="tooltip-group-hidden"
+  id="infoBox"
+>
+  <rect
+    fill="white"
+    height="30"
+    id="aaa100-tooltip-rect"
+    rx="4"
+    ry="4"
+    stroke="black"
+    stroke-width="2"
+    width="60"
+    x="0"
+    y="0"
+  />
+  <text
+    id="aaa100-tooltip-text"
+    x="12"
+    y="21"
+  >
+    Info
+  </text>
+</g>
+`;

@@ -1,0 +1,39 @@
+{
+  "program": "SCMIN2289",
+  "program_desc": "Minor Program in Statistics",
+  "logp": -7.6016,
+  "semesters": [
+    {
+      "k": 1,
+      "courses": [
+        "CSCA08H3",
+        "CSCA67H3",
+        "MATA31H3"
+      ]
+    },
+    {
+      "k": 2,
+      "courses": [
+        "MATA37H3"
+      ]
+    },
+    {
+      "k": 3,
+      "courses": [
+        "STAB52H3"
+      ]
+    },
+    {
+      "k": 4,
+      "courses": [
+        "STAB57H3"
+      ]
+    },
+    {
+      "k": 5,
+      "courses": [
+        "STAC67H3"
+      ]
+    }
+  ]
+}
